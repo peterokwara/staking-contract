@@ -86,6 +86,7 @@ contract StakingContract is ERC20 {
         require(amount > 0, "amount is <= 0");
         require(staked[msg.sender] >= amount, "amount is > staked");
         claim();
+        // require(block.timestamp >= stakedFromTs[msg.sender] + 28 days, "28 days have not passed yet");
         staked[msg.sender] -= amount;
         _transfer(address(this), msg.sender, amount);
     }
