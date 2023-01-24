@@ -20,7 +20,7 @@
     - [CONTRIBUTING](#contributing)
   - [License](#license)
   - [Versions](#versions)
-  - [Contact Information](#contact-information)
+  - [Contact Info](#contact-info)
 
 ### About the website
 
@@ -30,13 +30,11 @@ A staking contract that allows the user to set their own apy.
 
 #### Technology Used
 
-This project uses: - HTML - CSS - SCSS - JS - NodeJS - Webpack - Babel - Truffle
-- Truffle version `0.5.1` 
-- OpenZeppelin library version `2.3.0`
-- ERC-721 Token Name `Nyota`
-- ERC-721 Token Symbol `NYT`
-- Token Address `0x9e4cf570F45425C59f3d0Eb84D9E48E53A6E9E9C`, to view on block explorer, see [here](https://rinkeby.etherscan.io/address/0x9e4cf570F45425C59f3d0Eb84D9E48E53A6E9E9C)
-
+This project uses: Truffle
+- Truffle version `v5.5.11` 
+- OpenZeppelin library version `latest`
+- Node `v16.16.0`
+- Npm `8.15.1`
 
 #### Running the project
 
@@ -88,9 +86,9 @@ For any concerns, please open an [issue](https://github.com/peterokwara/staking-
 
 ### Versions
 
-- Version 1.0 DATE 10/04/2022
+- Version 1.0 DATE 24/01/2023
 
-### Contact Information
+### Contact Info
 
 If you have found any bugs, or have any feedback or questions and or want to post a feature request please use the [Issuetracker](https://github.com/peterokwara/staking-contract/issues) to report them.
 
