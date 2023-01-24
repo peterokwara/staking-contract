@@ -114,6 +114,21 @@ contract("StakingContract", function (accounts) {
     });
 
     /**
+     * Fail to change the apy if the contract is disabled
+     */
+    it("should fail to change the apy if the contract is disabled ", async () => {
+        let reverted = false;
+
+        try {
+            await stakingContract.setOperatingStatus(false, { from: account_one });
+            await stakingContract.setApy(15, { from: account_one });
+        } catch (error) {
+            reverted = true;
+        }
+        assert.equal(reverted, true, "cannot change apy if the smart contract is disabled");
+    });
+
+    /**
      * Helper function to increase block time.
      * @param duration The duration in milliseconds to increase the time by.
      * @returns void.
